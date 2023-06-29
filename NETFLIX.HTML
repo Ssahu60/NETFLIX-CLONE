@@ -1,0 +1,391 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faviconN.png"> 
+    <title>Netflix India-Watch TV Shows Online and Watch Movies Online</title>
+    <style>
+        .lang{
+            color: white;
+            border: 1px solid white;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+            align-items: center;
+            background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(background_img.png);
+        }
+        .sign{
+            background-color: rgb(230, 17, 17);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .sign:hover{
+            background-color: rgb(194, 6, 6);
+            cursor: pointer;
+        }
+        .select{
+           border: none;
+           font-weight: 500;
+          background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(background_img.png);
+           color: white;
+        }
+        .navbar{
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 160px;
+            padding-right: 160px;
+            padding-top: 1px;
+            
+        }
+        .container{
+            width: 100%;
+            height: 72vh;
+            background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(background_img.png);
+            background-size: cover;
+            background-position: center;
+        }
+        header{
+            background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(background_img.png);
+            background-size: cover;
+            background-position: center;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+           
+        }
+        h1{
+            color: white;
+            text-align: center;
+           font-size: 3.3em;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-bottom: 14px;
+        }
+        h3{
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            margin-bottom: 24px;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            margin-top: 14px;
+        }
+        
+        .email{
+            width: 55%;
+            height: fit-content;
+            background-image: radial-gradient(rgba(0,0,0,0.1),rgb(0, 0, 0.1));
+           border-radius: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 18%;
+           border: 1px solid white;
+          
+           
+        }
+        input[type="text"]{
+            border: none;
+            outline: none;
+            padding: 20px 10px;
+            font-size: 1em;
+            background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+            background-color: black;
+            border-radius: 4px;
+        }
+        .get{
+            cursor: pointer;
+            padding: 18px 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(250, 6, 6);
+            color: white;
+            font-size: 1.4em;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .get:hover{
+            background-color: rgb(216, 10, 10);
+        }
+        .head{
+            align-items: center;
+            text-align: center;
+            padding: 10%;
+        }
+        .second{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            padding: 10%;
+            border: 0;
+        }
+        .third{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            padding: 10%;
+            
+        }
+        .fourth{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            padding: 10%;
+          
+        }
+        .fivth{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            padding: 10%;
+        }
+       .btn button{
+           margin: 12px;
+        }
+        .btn{
+            align-items: center;
+            justify-content: center;
+        }
+        h1,h3{
+            text-align: center;
+            align-items: center;
+        }
+        main hr{
+            border: 0;
+            background: rgb(51, 49, 49);
+            height: 0.4em;
+            margin: 0;
+        }
+        .six{
+            background-color: black;
+           padding: 10%;
+        }
+        .six h1{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        ul li{
+            color: white;
+            list-style: none;
+            padding: 2%;
+            width: 60%;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15%;
+        }
+       .list li{
+            background-color: rgb(34, 33, 33);
+           font-size: mediums;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+       li:hover{
+        background-color: rgb(50, 49, 49);
+        cursor: pointer;
+       }
+       .footer{
+        background-color: black;
+        margin: 0;
+        padding: 3%;
+        color: rgb(165, 160, 160);
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       .last{
+        align-items: center;
+        text-align: left;
+       }
+       .foot ul li{
+          color: rgb(167, 163, 163);
+       }
+       .foot{
+        display: flex;
+       padding: 2%;
+       margin: auto;
+       justify-content: center;
+       }
+       .one,.two,.three{
+        width: 33%;
+       }
+       .footer h4{
+        margin-left: 10%;
+       }
+       .last{
+        margin-left: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        color: rgb(163, 163, 163);
+       }
+       .lang1{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        align-items: center;
+        text-align: center;
+        margin-left: 10%;
+        padding: 5px;
+       }
+    </style>
+    </head>
+    <body> 
+         <header>
+                   <nav class="navbar">
+                    <img src="nlogo.png" width="14%">
+                    <div class="btn">
+                    <button class="lang"><img  src="internet.png" class="internet" width="18px"> <select class="select">
+                        <option>English</option> 
+                        <option>Hindi</option>
+                        <option>Kannad</option>
+                        <option>Telugu</option>
+                        <option>Marathi</option>
+                        <option>Gujrati</option>
+                    </select>
+                    </button>
+                    <button class="sign">Sign in</button>
+                </div>
+                   </nav>
+            </header>
+              <main>
+                <div class="first">
+                <div class="container">
+                 <div class="head">
+                    <h1>Unlimited movies, TV shows and more</h1>
+                    <h3>Watch anywhere. Cancel anytime.</h3>
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                 <div class="email"><input type="text" placeholder="Email Address">
+                <div class="get">Get Started ></div> </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="second">
+            <div class="tv">
+            <h1>Enjoy on your TV</h1><br>
+            <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+        </div>
+        <div class="tvimg"><img src="tvimg.png"></div>
+         </div><hr>
+         <div class="third">
+            <div class="showsimg"><img src="showsimg.png"></div>
+            <div class="shows">
+            <h1>Download your shows to watch offline</h1><br>
+            <h3>Save your favourites easily and always have something to watch. </h3>
+        </div>
+         </div>
+         <hr>
+         <div class="fourth">
+            <div class="movies">
+            <h1>Watch everywhere</h1><br>
+            <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+        </div>
+        <div class="movies"><img src="watchimg.png"></div>
+         </div>
+        <hr>
+         <div class="fivth">
+            <div class="child"><img src="childimg.png"></div>
+            <div class="child">
+            <h1>Create profiles for kids</h1><br>
+            <h3>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+        </div>
+         </div>
+         <hr>
+         <div class="six">
+            <br><br>
+            <h1>Frequently Asked Questions</h1>
+           <div class="list">
+            <ul>
+                <li>What is Netflix?
+                </li><br>
+                <li>How much does Netflix cost?
+                </li><br>
+                <li>Where can I watch?
+                </li><br>
+                <li>How do I cancel?
+                </li><br>
+                <li>What can I watch on Netflix?
+                </li><br>
+                <li>Is Netflix good for kids?
+                </li>
+            </ul>
+           </div><br><br>
+           <p>Ready to watch? Enter your email to create or restart your membership.</p><br>
+           <div class="email"><input type="text" placeholder="Email Address" >
+            <div class="get">Get Started ></div> </div>
+            </div>
+         </div>
+         <hr>
+         <footer class="footer"><br><br>
+            <h4>Questions? <u>Call 000-800-919-1694</u></h4>
+            <div class="foot">
+            <div class="one">
+                <ul>
+                    <li><u>FAQ</u></li>
+                    <li>Media Center</li>
+                    <li>ways to watch</li>
+                    <li>cookies</li>
+                    <li>speed test</li>
+                </ul>
+            </div>
+            <div class="two"><ul>
+                <li><u>Help center</u></li>
+                <li>invester relations</li>
+                <li>terms of use</li>
+                <li>corporate</li>
+                <li>legal notice</li>
+            </ul></div>
+            <div class="three"><ul>
+                <li><u>Account</u></li>
+                <li>jobs</li>
+                <li>privacy</li>
+                <li>contact us</li>
+                <li>only on Netflix</li>
+            </ul></div>
+            
+        </div>
+        <button class="lang1"><img  src="internet.png" class="internet" width="18px"> <select class="select">
+            <option>English</option> 
+            <option>Hindi</option>
+            <option>Kannad</option>
+            <option>Telugu</option>
+            <option>Marathi</option>
+            <option>Gujrati</option>
+        </select>
+        </button>
+        <p class="last">Netflix India</p>
+         </footer>
+    </main>
+
+</body>
+</html>
